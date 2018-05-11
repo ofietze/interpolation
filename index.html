@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME</title>
+	<title>Linear Spline Interpolation</title>
 	<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="style.css" type="text/css" rel="stylesheet"/>
 </head>
   <body>
+        <h1>Linear Spline</h1>
+        <p>Enter the points of the function you want to have interpolated.</p>
+        <div id="resultChart"></div>
 		<input type="number" id="numPoints" autofocus placeholder="number of points">
-		<button type="submit" id="addPoints">Add Points</button> <br>
-
-		<button type="submit" id="submitBtn">Interpolate linear Spline</button>
+		<button type="submit" id="addPoints">Add/Reset Points</button>
+        <div id="x">X Y</div>
 		<div id="enterPoints"></div>
-		<div id="resultChart"></div>
+        <button type="submit" id="submitBtn">Interpolate linear Spline</button>
+
   </body>
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
